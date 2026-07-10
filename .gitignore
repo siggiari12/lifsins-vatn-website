@@ -1,0 +1,4 @@
+# Local tooling & OS cruft — never deploy these
+.venv-rembg/
+.DS_Store
+**/.DS_Store

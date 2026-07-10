@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinuci 0,0 — Áfengislaus ítölsk vín | Lífsins Vatn</title>
+<meta name="description" content="Vinuci 0,0 — ítölsk áfengislaus gæðavín. Ekta vín, ekkert áfengi, fáar hitaeiningar. Fimm vín fyrir veitingastaði og heimili, einkainnflutt af Lífsins Vatn.">
+<link rel="canonical" href="https://lifsinsvatn.is/vinuci.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Lífsins Vatn ehf">
+<meta name="theme-color" content="#3E4657">
+<link rel="icon" href="lifsinsvatn_logo_t.png">
+<link rel="apple-touch-icon" href="lifsinsvatn_logo_t.png">
+
+<!-- Open Graph — rich preview when the link is shared (email, WhatsApp, social) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lífsins Vatn">
+<meta property="og:locale" content="is_IS">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:url" content="https://lifsinsvatn.is/vinuci.html">
+<meta property="og:title" content="Vinuci 0,0 — Áfengislaus ítölsk vín">
+<meta property="og:description" content="Ekta ítölsk vín, 0,0% áfengi. Fimm áfengislaus vín fyrir veitingastaði og heimili — einkainnflutt af Lífsins Vatn.">
+<meta property="og:image" content="https://lifsinsvatn.is/Vinuci/Vinuci_good_image.jpg">
+<meta property="og:image:alt" content="Vinuci 0,0 úrvalið — áfengislaus ítölsk vín">
+
+<!-- Twitter / X card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vinuci 0,0 — Áfengislaus ítölsk vín">
+<meta name="twitter:description" content="Ekta ítölsk vín, 0,0% áfengi. Fimm áfengislaus vín — einkainnflutt af Lífsins Vatn.">
+<meta name="twitter:image" content="https://lifsinsvatn.is/Vinuci/Vinuci_good_image.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="producer.css">
+<style>
+  /* ============================================================
+     VINUCI — art-forward page built on the brand mural.
+     Palette sampled from the Vinuci brochure artwork.
+     ============================================================ */
+  :root{
+    --vin-slate:#3E4657;    --vin-blue:#5E7291;   --vin-blue-lt:#8496B3;
+    --vin-gold:#AD8C2C;     --vin-terra:#A0605C;  --vin-mauve:#87737F;
+    --vin-cream:#F5F1E8;
+  }
+
+  /* The whole page sits on the washed brand mural (fixed) */
+  body{
+    background:
+      linear-gradient(rgba(245,241,232,.90), rgba(244,240,231,.93)),
+      url("Vinuci/art_bg.jpg") center top / cover fixed no-repeat;
+    color:#221d18;
+  }
+
+  /* eyebrows & gold accents shift to the mural's slate/mustard */
+  .eyebrow{color:var(--vin-blue)}
+  .story-quote{border-left-color:var(--vin-gold);color:var(--vin-slate)}
+  .btn-wine{background:var(--vin-slate)}.btn-wine:hover{background:#2c3341}
+
+  /* ---- HERO — full-bleed mural, editorial text, outlined 0,0 ---- */
+  .phero{min-height:90vh}
+  .phero::after{
+    background:
+      linear-gradient(102deg, rgba(28,32,44,.74) 0%, rgba(28,32,44,.34) 40%, rgba(28,32,44,0) 68%),
+      linear-gradient(0deg, rgba(18,21,29,.80) 0%, rgba(18,21,29,0) 42%);
+  }
+  .phero-region{color:#E7DCC2;font-style:italic}
+  .phero-lead{max-width:560px}
+  .vin-zero{
+    position:absolute;z-index:2;top:11%;right:6%;
+    font-family:var(--serif);font-weight:500;line-height:.78;letter-spacing:-.03em;
+    font-size:clamp(6rem,19vw,17rem);
+    color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.82);
+    pointer-events:none;user-select:none;
+    animation:zeroIn 1.4s cubic-bezier(.2,.6,.2,1) .3s both;
+  }
+  @keyframes zeroIn{from{opacity:0;transform:translateY(30px) scale(.96)}to{opacity:1;transform:none}}
+
+  /* ---- FACTS — translucent glass over the mural ---- */
+  .facts{background:rgba(255,255,255,.52);border-color:rgba(62,70,87,.14);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+  .fact .v{color:var(--vin-slate)}
+
+  /* ---- sections: transparent so the mural stays continuous ---- */
+  .section.soft{background:transparent}
+  .story-media{border:1px solid rgba(62,70,87,.14);box-shadow:0 30px 70px -40px rgba(30,35,48,.55)}
+
+  /* small brand seal drawn from the brochure badge (factual, not an award) */
+  .brandmark{display:inline-flex;align-items:center;gap:14px;margin-top:28px;
+    border:1px solid rgba(62,70,87,.22);border-radius:100px;padding:10px 20px 10px 14px;background:rgba(255,255,255,.5)}
+  .brandmark b{font-family:var(--serif);font-size:1.9rem;font-weight:500;color:var(--vin-terra);line-height:1}
+  .brandmark span{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--vin-slate);font-weight:500;line-height:1.4}
+
+  /* ---- RANGE — rebuilt on the clean brochure mural (brochure as model) ---- */
+  .range-sec{position:relative;background:linear-gradient(rgba(244,240,231,.74),rgba(243,238,228,.81)),url("Vinuci/range_bg.jpg") center/cover fixed}
+  .range-head{display:flex;align-items:center;justify-content:center;gap:clamp(20px,3vw,40px);max-width:820px;margin:0 auto clamp(44px,5vw,72px)}
+  .range-seal{width:clamp(84px,10vw,120px);height:auto;flex:none;filter:drop-shadow(0 8px 14px rgba(30,35,48,.2))}
+  .range-head .rh-text{text-align:left;max-width:560px}
+  .range-head .eyebrow{display:block;margin-bottom:14px}
+  .range-head h2{margin-bottom:14px}
+  .range-head .lead{color:var(--muted);font-weight:300}
+  @media(max-width:620px){.range-head{flex-direction:column;text-align:center}.range-head .rh-text{text-align:center}}
+  .lineup{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(10px,1.8vw,28px);align-items:start}
+  .vwine .shot-wrap{height:clamp(200px,25vw,312px);display:flex;align-items:flex-end;justify-content:center}
+  .vwine{display:flex;flex-direction:column;align-items:center;text-align:center}
+  .vwine .shot{max-height:100%;width:auto;filter:drop-shadow(0 22px 24px rgba(30,35,48,.26));transition:transform .5s cubic-bezier(.2,.6,.2,1)}
+  .vwine:hover .shot{transform:translateY(-12px)}
+  .vwine h3{font-family:var(--serif);font-style:italic;font-weight:500;font-size:1.7rem;color:var(--vin-slate);margin-top:20px;line-height:1}
+  .vwine .vtype{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--vin-terra);font-weight:600;margin-top:10px}
+  .vwine .vgrape{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--vin-slate);font-weight:600;margin-top:12px}
+  .vwine .vdesc{font-size:.82rem;color:var(--muted);font-weight:300;line-height:1.55;margin-top:9px;max-width:205px}
+  @media(max-width:880px){
+    .range-sec{background-attachment:scroll}
+    .lineup{grid-template-columns:1fr 1fr;gap:40px 18px}
+    .vwine .shot-wrap{height:210px}
+  }
+
+  /* ---- GALLERY — enlarged 2×2 feature layout ---- */
+  .gallery{grid-template-columns:1fr 1fr;gap:clamp(16px,2vw,28px)}
+  .gallery figure{border-radius:8px;box-shadow:0 30px 60px -40px rgba(30,35,48,.55)}
+  @media(max-width:680px){.gallery{grid-template-columns:1fr}}
+
+  /* ---- AWARDS — The WineHunter No|Low certificates ---- */
+  .awards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.6vw,34px);margin-top:clamp(30px,4vw,50px)}
+  .award-card{background:rgba(255,255,255,.66);border:1px solid rgba(62,70,87,.14);border-radius:14px;overflow:hidden;
+    box-shadow:0 26px 54px -36px rgba(30,35,48,.55);display:flex;flex-direction:column;transition:transform .5s cubic-bezier(.2,.6,.2,1),box-shadow .5s}
+  .award-card:hover{transform:translateY(-6px);box-shadow:0 34px 64px -34px rgba(30,35,48,.6)}
+  .award-card img{width:100%;height:auto;display:block;border-bottom:1px solid rgba(62,70,87,.1)}
+  .award-cap{padding:20px 22px 24px}
+  .award-cap h3{font-family:var(--serif);font-style:italic;font-weight:500;font-size:1.5rem;color:var(--vin-slate);line-height:1;margin-bottom:9px}
+  .award-cap .cat{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--vin-terra);font-weight:600;margin-bottom:11px}
+  .award-cap p{font-size:.84rem;color:var(--muted);font-weight:300;line-height:1.55}
+  @media(max-width:820px){.awards-grid{grid-template-columns:1fr;max-width:440px;margin-inline:auto}}
+
+  /* ---- VENUES — the terracotta 'hand' panel of the mural ---- */
+  .venues{position:relative;overflow:hidden;color:#fff}
+  .venues .v-art{position:absolute;inset:0;z-index:0}
+  .venues .v-art img{width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.04);animation:kenburns 30s ease-out infinite alternate}
+  .venues::after{content:'';position:absolute;inset:0;z-index:1;
+    background:linear-gradient(90deg, rgba(28,24,28,.88) 0%, rgba(40,32,38,.62) 50%, rgba(58,44,44,.42) 100%)}
+  .venues .wrap{position:relative;z-index:2;display:grid;grid-template-columns:auto 1fr;gap:64px;align-items:center}
+  .venues .big0{font-family:var(--serif);font-weight:500;line-height:.82;color:#fff;
+    font-size:clamp(5rem,12vw,9rem);text-shadow:0 6px 40px rgba(0,0,0,.35)}
+  .venues .big0 small{display:block;font-family:var(--sans);font-size:.11em;letter-spacing:.28em;text-transform:uppercase;color:var(--vin-blue-lt);margin-top:6px}
+  .venues .eyebrow{color:#DDBFA0}
+  .venues h2{color:#fff;margin-bottom:18px}
+  .venues p{color:rgba(255,255,255,.72);font-weight:300;max-width:560px}
+
+  /* CTA band on this page also uses a slate tone (over the dark base) */
+  .cta{background:linear-gradient(160deg,#2b323f 0%,#1b1f27 100%)}
+  .cta .eyebrow{color:#DDBFA0}
+
+  /* ---- FAQ — native accordion, doubles as AEO / rich-result source ---- */
+  .faq-list{max-width:840px;margin:10px auto 0}
+  .faq-item{border-bottom:1px solid rgba(62,70,87,.18)}
+  .faq-item summary{cursor:pointer;list-style:none;padding:24px 44px 24px 0;position:relative;
+    font-family:var(--serif);font-size:clamp(1.2rem,2.4vw,1.42rem);color:var(--vin-slate);font-weight:500}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary::after{content:'+';position:absolute;right:4px;top:50%;transform:translateY(-50%);
+    font-family:var(--sans);font-size:1.7rem;font-weight:300;color:var(--vin-blue);transition:transform .3s}
+  .faq-item[open] summary::after{content:'–'}
+  .faq-item .faq-a{padding:0 44px 26px 0;color:#3a352e;font-weight:300;line-height:1.72;max-width:72ch}
+  .faq-item .faq-a a{color:var(--vin-terra);text-decoration:underline}
+
+  @media(max-width:880px){
+    body{background-attachment:scroll}
+    .venues .wrap{grid-template-columns:1fr;gap:32px}
+    .vin-zero{top:auto;bottom:22%;font-size:9rem}
+  }
+</style>
+
+<!-- ============================================================
+     STRUCTURED DATA (JSON-LD) — the machine-readable layer that
+     feeds Google rich results and AI answer engines. The FAQPage
+     text below MUST match the visible FAQ section on the page.
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://lifsinsvatn.is/#organization",
+      "name": "Lífsins Vatn ehf",
+      "url": "https://lifsinsvatn.is/",
+      "email": "info@lifsinsvatn.is",
+      "telephone": "+354 694 5257",
+      "logo": "https://lifsinsvatn.is/lifsinsvatn_logo_t.png",
+      "description": "Ítölsk gæðavín, einkainnflutt til Íslands. Fjölskyldurekið.",
+      "address": { "@type": "PostalAddress", "addressCountry": "IS" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://lifsinsvatn.is/#website",
+      "url": "https://lifsinsvatn.is/",
+      "name": "Lífsins Vatn",
+      "inLanguage": "is",
+      "publisher": { "@id": "https://lifsinsvatn.is/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://lifsinsvatn.is/vinuci.html#webpage",
+      "url": "https://lifsinsvatn.is/vinuci.html",
+      "name": "Vinuci 0,0 — Áfengislaus ítölsk vín",
+      "description": "Vinuci — ítölsk áfengislaus gæðavín (0,0%). Ekta vín, ekkert áfengi, fáar hitaeiningar. Einkainnflutt af Lífsins Vatn.",
+      "inLanguage": "is",
+      "isPartOf": { "@id": "https://lifsinsvatn.is/#website" },
+      "about": { "@id": "https://lifsinsvatn.is/vinuci.html#brand" }
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://lifsinsvatn.is/vinuci.html#brand",
+      "name": "Vinuci",
+      "logo": "https://lifsinsvatn.is/Vinuci/Vinuci_logo.png",
+      "description": "Ítölsk áfengislaus (0,0%) gæðavín frá Merano í Suður-Týról — ekta vín, ekkert áfengi.",
+      "url": "https://lifsinsvatn.is/vinuci.html"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Lífsins Vatn", "item": "https://lifsinsvatn.is/" },
+        { "@type": "ListItem", "position": 2, "name": "Vínhús", "item": "https://lifsinsvatn.is/#producers" },
+        { "@type": "ListItem", "position": 3, "name": "Vinuci" }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "name": "Vinuci 0,0 úrvalið",
+      "numberOfItems": 5,
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "item": {
+          "@type": "Product", "name": "Vinuci Deciso 0,0",
+          "category": "Áfengislaust hvítvín", "brand": { "@id": "https://lifsinsvatn.is/vinuci.html#brand" },
+          "image": "https://lifsinsvatn.is/Vinuci/Deciso_cut.png",
+          "description": "Áfengislaust hvítvín (0,0%) úr Riesling." } },
+        { "@type": "ListItem", "position": 2, "item": {
+          "@type": "Product", "name": "Vinuci Allegro 0,0",
+          "category": "Áfengislaust freyðivín", "brand": { "@id": "https://lifsinsvatn.is/vinuci.html#brand" },
+          "image": "https://lifsinsvatn.is/Vinuci/Allegro_cut.png",
+          "description": "Áfengislaust freyðivín (0,0%) úr Riesling." } },
+        { "@type": "ListItem", "position": 3, "item": {
+          "@type": "Product", "name": "Vinuci Floreale 0,0",
+          "category": "Áfengislaust freyðivín", "brand": { "@id": "https://lifsinsvatn.is/vinuci.html#brand" },
+          "image": "https://lifsinsvatn.is/Vinuci/Floreale_cut.png",
+          "description": "Áfengislaust freyðivín (0,0%) — Cuvée Rosé." } },
+        { "@type": "ListItem", "position": 4, "item": {
+          "@type": "Product", "name": "Vinuci Serio 0,0",
+          "category": "Áfengislaust rauðvín", "brand": { "@id": "https://lifsinsvatn.is/vinuci.html#brand" },
+          "image": "https://lifsinsvatn.is/Vinuci/Serio_cut.png",
+          "description": "Áfengislaust rauðvín (0,0%) úr Pinot Noir." } },
+        { "@type": "ListItem", "position": 5, "item": {
+          "@type": "Product", "name": "Vinuci Nero 0,0",
+          "category": "Áfengislaust rauðvín", "brand": { "@id": "https://lifsinsvatn.is/vinuci.html#brand" },
+          "image": "https://lifsinsvatn.is/Vinuci/Nero_cut.png",
+          "description": "Áfengislaust rauðvín (0,0%) úr Cabernet Sauvignon." } }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lifsinsvatn.is/vinuci.html#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Er Vinuci raunverulega áfengislaust?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Já. Öll Vinuci-vín eru 0,0% — algjörlega áfengislaus. Vínin eru fullgerjuð eins og hefðbundið vín og áfengið síðan fjarlægt undir lofttæmi." } },
+        { "@type": "Question", "name": "Hvernig er Vinuci búið til?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Vinuci er ekta ítalskt vín frá Merano í Suður-Týról. Það er gerjað á hefðbundinn hátt og vínandinn síðan látinn gufa upp undir lofttæmi við lágan hita, svo ilmur og bragð haldast." } },
+        { "@type": "Question", "name": "Hvaða Vinuci-vín eru í boði?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Fimm vín: Deciso (Riesling, hvítvín), Allegro (Riesling, freyðivín), Floreale (Cuvée Rosé, freyðivín), Serio (Pinot Noir, rauðvín) og Nero (Cabernet Sauvignon, rauðvín)." } },
+        { "@type": "Question", "name": "Er Vinuci hitaeiningasnautt?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Já. Þar sem áfengið hefur verið fjarlægt inniheldur Vinuci mun færri hitaeiningar en hefðbundið vín." } },
+        { "@type": "Question", "name": "Get ég boðið Vinuci á veitingastaðnum mínum?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Já. Lífsins Vatn flytur Vinuci inn til Íslands og útvegar það veitingastöðum, hótelum og börum. Hafðu samband í info@lifsinsvatn.is eða síma +354 694 5257." } },
+        { "@type": "Question", "name": "Hvar er hægt að kaupa Vinuci á Íslandi?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Vinuci er einkainnflutt til Íslands af Lífsins Vatn ehf. Fyrir pantanir og fyrirspurnir, hafðu samband í info@lifsinsvatn.is eða +354 694 5257." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span><span class="is-t">Framleiðandi · Áfengislaust · Ítalíu</span><span class="en-t">Producer · Dealcoholized · Italy</span></span>
+    <span class="lang"><button id="btnIs" class="active" onclick="setLang('is')">IS</button><button id="btnEn" onclick="setLang('en')">EN</button></span>
+  </div>
+</div>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="nav-logo"><img src="lifsinsvatn_logo_t.png" alt="Lífsins Vatn ehf"><span class="nav-name">Lífsins Vatn</span></a>
+    <ul class="nav-links">
+      <li class="hide-sm"><a href="index.html#producers"><span class="is-t">Öll vínhús</span><span class="en-t">All estates</span></a></li>
+      <li class="hide-sm"><a href="borgo-molino.html">Borgo Molino</a></li>
+      <li class="hide-sm"><a href="zyme.html">Zýmé</a></li>
+      <li><a href="index.html#contact" class="btn btn-dark" style="color:#fff"><span class="is-t">Hafa samband</span><span class="en-t">Get in touch</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="phero">
+  <div class="phero-bg"><img src="Vinuci/art_hero.jpg" alt="Vinuci áfengislaust vín — listaverk vörumerkisins í slikjubláu, sinnepsgulu og terracotta"></div>
+  <div class="wrap phero-inner">
+    <a href="index.html#producers" class="phero-back">← <span class="is-t">Vínhúsin okkar</span><span class="en-t">Our estates</span></a>
+    <span class="phero-region"><span class="is-t">Áfengislaust · 0,0%</span><span class="en-t">Dealcoholized · 0.0%</span></span>
+    <h1 class="h1">Vinuci</h1>
+    <p class="phero-lead"><span class="is-t">Ítölsk áfengislaus gæðavín — vínandinn fjarlægður undir lofttæmi án þess að bragðið tapist. Ekta vín, ekkert áfengi.</span><span class="en-t">Italian dealcoholized fine wines — the alcohol lifted out under vacuum without losing the flavour. Real wine, no alcohol.</span></p>
+  </div>
+</header>
+
+<div class="facts">
+  <div class="wrap">
+    <div class="fact"><div class="k"><span class="is-t">Tegund</span><span class="en-t">Type</span></div><div class="v"><span class="is-t">Áfengislaust</span><span class="en-t">Dealcoholized</span></div></div>
+    <div class="fact"><div class="k"><span class="is-t">Áfengi</span><span class="en-t">Alcohol</span></div><div class="v"><span class="is-t">0,0%</span><span class="en-t">0.0%</span></div></div>
+    <div class="fact"><div class="k"><span class="is-t">Uppruni</span><span class="en-t">Origin</span></div><div class="v"><span class="is-t">Merano, Ítalíu</span><span class="en-t">Merano, Italy</span></div></div>
+    <div class="fact"><div class="k"><span class="is-t">Úrval</span><span class="en-t">Range</span></div><div class="v"><span class="is-t">5 vín</span><span class="en-t">5 wines</span></div></div>
+  </div>
+</div>
+
+<!-- THE RANGE — rebuilt from scratch on the clean brochure mural -->
+<section class="section soft range-sec">
+  <div class="wrap">
+    <div class="range-head reveal">
+      <img class="range-seal" src="Vinuci/seal.png" alt="Low calories — real wine, no alcohol">
+      <div class="rh-text">
+        <span class="eyebrow"><span class="is-t">Úrvalið</span><span class="en-t">The range</span></span>
+        <h2 class="h2"><span class="is-t">Fimm vín. Ekkert áfengi.</span><span class="en-t">Five wines. Zero alcohol.</span></h2>
+        <p class="lead"><span class="is-t">Áfengislaust vín — fullkomin lausn fyrir öll sem vilja skála án áfengis og njóta glass af víni eða freyðivíni, án þess að slá af bragði og upplifun.</span><span class="en-t">Dealcoholized wine — the ideal solution for anyone who wants to toast alcohol-free and enjoy a glass of wine or sparkling wine, without compromising on taste and experience.</span></p>
+      </div>
+    </div>
+    <div class="lineup" data-stagger>
+      <div class="vwine reveal">
+        <div class="shot-wrap"><img class="shot" src="Vinuci/Deciso_cut.png" alt="Vinuci Deciso 0,0"></div>
+        <h3>Deciso</h3>
+        <div class="vgrape">Riesling</div>
+        <div class="vdesc"><span class="is-t">Þurrt og ferskt Riesling með tónum af ferskju, apríkósu og sítrus. Borið fram vel kælt. Frábært með fiski, skelfiski og léttum réttum.</span><span class="en-t">A dry, fresh Riesling with notes of peach, apricot and citrus. Serve well chilled. Excellent with fish, shellfish and light dishes.</span></div>
+      </div>
+      <div class="vwine reveal">
+        <div class="shot-wrap"><img class="shot" src="Vinuci/Allegro_cut.png" alt="Vinuci Allegro 0,0"></div>
+        <h3>Allegro</h3>
+        <div class="vgrape">Sparkling Riesling</div>
+        <div class="vdesc"><span class="is-t">Freyðandi útgáfan af Deciso — sömu tónar af ferskju og sítrus. Frábær fordrykkur.</span><span class="en-t">The sparkling version of Deciso — the same notes of peach and citrus. A great aperitif.</span></div>
+      </div>
+      <div class="vwine reveal">
+        <div class="shot-wrap"><img class="shot" src="Vinuci/Floreale_cut.png" alt="Vinuci Floreale 0,0"></div>
+        <h3>Floreale</h3>
+        <div class="vgrape">Sparkling Rosé</div>
+        <div class="vdesc"><span class="is-t">Létt og freyðandi rósavín með blómakeim og rauðum berjum. Fullkomið sem fordrykkur eða með léttum réttum. Þrúgur: 80% Pinot Noir, 20% Airén.</span><span class="en-t">A light, sparkling rosé with floral notes and red berries. Perfect as an aperitif or with light dishes. Grapes: 80% Pinot Noir, 20% Airén.</span></div>
+      </div>
+      <div class="vwine reveal">
+        <div class="shot-wrap"><img class="shot" src="Vinuci/Serio_cut.png" alt="Vinuci Serio 0,0"></div>
+        <h3>Serio</h3>
+        <div class="vgrape">Pinot Noir</div>
+        <div class="vdesc"><span class="is-t">Mjúkt og elegant Pinot Noir, geymt í þrjú ár á eikartunnum. Silkimjúk tannín og djúpt berjabragð. Frábært með kjöti og pasta.</span><span class="en-t">A soft, elegant Pinot Noir, aged three years in oak. Silky tannins and deep berry flavour. Excellent with meat and pasta.</span></div>
+      </div>
+      <div class="vwine reveal">
+        <div class="shot-wrap"><img class="shot" src="Vinuci/Nero_cut.png" alt="Vinuci Nero 0,0"></div>
+        <h3>Nero</h3>
+        <div class="vgrape">Cabernet Sauvignon</div>
+        <div class="vdesc"><span class="is-t">Dökkt og bragðmikið Cabernet Sauvignon — ávaxtaríkt og aðgengilegt. Frábært með aðalréttum: kjöti, pasta, pizzu.</span><span class="en-t">A dark, flavourful Cabernet Sauvignon — fruity and approachable. Excellent with mains: meat, pasta, pizza.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY / FOR VENUES -->
+<section class="section venues">
+  <div class="v-art"><img src="Vinuci/art_venues.jpg" alt=""></div>
+  <div class="wrap">
+    <div class="reveal">
+      <div class="big0"><span class="is-t">0,0%</span><span class="en-t">0.0%</span><small><span class="is-t">Áfengi</span><span class="en-t">Alcohol</span></small></div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow" style="display:block;margin-bottom:18px"><span class="is-t">Fyrir veitingastaði</span><span class="en-t">For venues</span></span>
+      <h2 class="h2"><span class="is-t">Þjónaðu hverjum einasta gesti.</span><span class="en-t">Serve every single guest.</span></h2>
+      <p><span class="is-t">Með Vinuci getur staðurinn boðið vandað vín þeim sem drekka ekki áfengi — án þess að grípa í gos eða vatn. Fullkomið með pörun, í hádeginu, fyrir akandi gesti og öll sem einfaldlega kjósa það.</span><span class="en-t">With Vinuci your venue can offer a proper wine to guests who don't drink alcohol — no reaching for soda or water. Perfect for pairings, lunch service, drivers, and anyone who simply prefers it.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section soft">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="is-t">Myndir</span><span class="en-t">Gallery</span></span>
+      <h2 class="h2"><span class="is-t">Vinuci á borðinu.</span><span class="en-t">Vinuci on the table.</span></h2>
+    </div>
+    <div class="gallery reveal">
+      <figure><img src="Vinuci/Vinuci_1_sq.jpg" alt="Vinuci áfengislaus vín á fínu matarborði"></figure>
+      <figure><img src="Vinuci/Vinuci_2_sq.jpg" alt="Vinuci 0,0 úrvalið á barborði á veitingastað"></figure>
+      <figure><img src="Vinuci/Vinuci_3_sq.jpg" alt="Vinuci áfengislaus vín í sælkeraverslun"></figure>
+      <figure><img src="Vinuci/Vinuci_4_sq.jpg" alt="Vinuci Allegro áfengislaust freyðivín á íslenskum veitingastað"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section class="section soft" id="awards">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="is-t">Viðurkenningar</span><span class="en-t">Awards &amp; recognition</span></span>
+      <h2 class="h2"><span class="is-t">Merano WineFestival</span><span class="en-t">Merano WineFestival</span></h2>
+      <p class="lead" style="max-width:720px;color:var(--muted);font-weight:300">
+        <span class="is-t">Á Merano WineFestival 2025 hlaut Vinuci þrenn verðlaun The WineHunter No | Low Award — fyrir Nero, Deciso og Allegro. Verðlaunin fagna gæðum, jafnvægi og fágun áfengislausra vína.</span>
+        <span class="en-t">At the 2025 Merano WineFestival, Vinuci received three The WineHunter No | Low Awards — for Nero, Deciso and Allegro. The awards celebrate the quality, balance and refinement of alcohol-free wine.</span>
+      </p>
+    </div>
+    <div class="awards-grid" data-stagger>
+      <figure class="award-card reveal">
+        <img src="Vinuci/Nero_winehunter.jpg" alt="The WineHunter No | Low Award 2025 — Vinuci Nero, Merano WineFestival" loading="lazy">
+        <figcaption class="award-cap">
+          <h3>Nero</h3>
+          <div class="cat"><span class="is-t">Rauðvín · The WineHunter No | Low 2025</span><span class="en-t">Red · The WineHunter No | Low 2025</span></div>
+          <p><span class="is-t">Verðlaunað fyrir dýpt og mýkt áfengislauss rauðvíns — hefðbundin fylling í léttari og fágaðri útgáfu.</span><span class="en-t">Awarded for the depth and softness of an alcohol-free red — traditional intensity in a lighter, more refined form.</span></p>
+        </figcaption>
+      </figure>
+      <figure class="award-card reveal">
+        <img src="Vinuci/Deciso_winehunter.jpg" alt="The WineHunter No | Low Award 2025 — Vinuci Deciso, Merano WineFestival" loading="lazy">
+        <figcaption class="award-cap">
+          <h3>Deciso</h3>
+          <div class="cat"><span class="is-t">Hvítvín · The WineHunter No | Low 2025</span><span class="en-t">White · The WineHunter No | Low 2025</span></div>
+          <p><span class="is-t">Verðlaunað fyrir persónuleika og fágun áfengislauss hvítvíns — ákveðið, samræmt og ekta í bragði.</span><span class="en-t">Awarded for the character and refinement of an alcohol-free white — decisive, harmonious and authentic in taste.</span></p>
+        </figcaption>
+      </figure>
+      <figure class="award-card reveal">
+        <img src="Vinuci/Allegro_winehunter.jpg" alt="The WineHunter No | Low Award 2025 — Vinuci Allegro, Merano WineFestival" loading="lazy">
+        <figcaption class="award-cap">
+          <h3>Allegro</h3>
+          <div class="cat"><span class="is-t">Freyðivín · The WineHunter No | Low 2025</span><span class="en-t">Sparkling · The WineHunter No | Low 2025</span></div>
+          <p><span class="is-t">Verðlaunað fyrir ferskleika og líf áfengislauss freyðivíns — gleðin við að skála, létt og ósvikin.</span><span class="en-t">Awarded for the freshness and vitality of an alcohol-free sparkling — the joy of a toast, light and genuine.</span></p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ (Answer-Engine Optimization) — visible copy mirrored in FAQPage JSON-LD below -->
+<section class="section soft" id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="is-t">Algengar spurningar</span><span class="en-t">FAQ</span></span>
+      <h2 class="h2"><span class="is-t">Spurt og svarað um Vinuci.</span><span class="en-t">Vinuci — questions &amp; answers.</span></h2>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item" open>
+        <summary><span class="is-t">Er Vinuci raunverulega áfengislaust?</span><span class="en-t">Is Vinuci really alcohol-free?</span></summary>
+        <div class="faq-a"><span class="is-t">Já. Öll Vinuci-vín eru 0,0% — algjörlega áfengislaus. Vínin eru fullgerjuð eins og hefðbundið vín og áfengið síðan fjarlægt undir lofttæmi.</span><span class="en-t">Yes. Every Vinuci wine is 0.0% — completely alcohol-free. The wines are fully fermented like any wine, then the alcohol is removed under vacuum.</span></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="is-t">Hvernig er Vinuci búið til?</span><span class="en-t">How is Vinuci made?</span></summary>
+        <div class="faq-a"><span class="is-t">Vinuci er ekta ítalskt vín frá Merano í Suður-Týról. Það er gerjað á hefðbundinn hátt og vínandinn síðan látinn gufa upp undir lofttæmi við lágan hita, svo ilmur og bragð haldast.</span><span class="en-t">Vinuci is real Italian wine from Merano in South Tyrol. It is fermented conventionally, then the alcohol is evaporated off under vacuum at low temperature so the aroma and flavour remain.</span></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="is-t">Hvaða Vinuci-vín eru í boði?</span><span class="en-t">Which Vinuci wines are available?</span></summary>
+        <div class="faq-a"><span class="is-t">Fimm vín: Deciso (Riesling, hvítvín), Allegro (Riesling, freyðivín), Floreale (Cuvée Rosé, freyðivín), Serio (Pinot Noir, rauðvín) og Nero (Cabernet Sauvignon, rauðvín).</span><span class="en-t">Five wines: Deciso (Riesling, white), Allegro (Riesling, sparkling), Floreale (Cuvée Rosé, sparkling), Serio (Pinot Noir, red) and Nero (Cabernet Sauvignon, red).</span></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="is-t">Er Vinuci hitaeiningasnautt?</span><span class="en-t">Is Vinuci low in calories?</span></summary>
+        <div class="faq-a"><span class="is-t">Já. Þar sem áfengið hefur verið fjarlægt inniheldur Vinuci mun færri hitaeiningar en hefðbundið vín.</span><span class="en-t">Yes. Because the alcohol has been removed, Vinuci contains far fewer calories than regular wine.</span></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="is-t">Get ég boðið Vinuci á veitingastaðnum mínum?</span><span class="en-t">Can I serve Vinuci at my venue?</span></summary>
+        <div class="faq-a"><span class="is-t">Já. Lífsins Vatn flytur Vinuci inn til Íslands og útvegar það veitingastöðum, hótelum og börum. Hafðu samband í <a href="mailto:info@lifsinsvatn.is">info@lifsinsvatn.is</a> eða síma +354 694 5257.</span><span class="en-t">Yes. Lífsins Vatn imports Vinuci to Iceland and supplies restaurants, hotels and bars. Get in touch at <a href="mailto:info@lifsinsvatn.is">info@lifsinsvatn.is</a> or call +354 694 5257.</span></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="is-t">Hvar er hægt að kaupa Vinuci á Íslandi?</span><span class="en-t">Where can I buy Vinuci in Iceland?</span></summary>
+        <div class="faq-a"><span class="is-t">Vinuci er einkainnflutt til Íslands af Lífsins Vatn ehf. Fyrir pantanir og fyrirspurnir, hafðu samband í <a href="mailto:info@lifsinsvatn.is">info@lifsinsvatn.is</a> eða +354 694 5257.</span><span class="en-t">Vinuci is exclusively imported to Iceland by Lífsins Vatn ehf. For orders and enquiries, contact <a href="mailto:info@lifsinsvatn.is">info@lifsinsvatn.is</a> or +354 694 5257.</span></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta">
+  <div class="wrap">
+    <span class="eyebrow"><span class="is-t">Áhugasöm?</span><span class="en-t">Interested?</span></span>
+    <h2 class="h2"><span class="is-t">Prófaðu Vinuci á þínum stað.</span><span class="en-t">Try Vinuci at your venue.</span></h2>
+    <p><span class="is-t">Við komum með úrvalið, smökkum saman og finnum vínin sem passa á matseðilinn þinn.</span><span class="en-t">We bring the range, taste together, and find the wines that fit your menu.</span></p>
+    <div class="cta-btns">
+      <a href="index.html#contact" class="btn btn-wine"><span class="is-t">Bóka smökkun</span><span class="en-t">Book a tasting</span></a>
+      <a href="https://www.vinuci.it" target="_blank" rel="noopener" class="btn btn-light">vinuci.it ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <div class="f-brand">Lífsins Vatn</div>
+      <p class="f-desc"><span class="is-t">Ítölsk gæðavín, einkainnflutt á Íslandi. Fjölskyldurekið.</span><span class="en-t">Italian fine wines, exclusively imported to Iceland. Family owned.</span></p>
+    </div>
+    <div class="f-col">
+      <h4><span class="is-t">Vínhús</span><span class="en-t">Estates</span></h4>
+      <a href="borgo-molino.html">Borgo Molino</a><a href="zyme.html">Zýmé</a><a href="vinuci.html">Vinuci 0,0</a>
+    </div>
+    <div class="f-col">
+      <h4><span class="is-t">Samband</span><span class="en-t">Contact</span></h4>
+      <a href="mailto:info@lifsinsvatn.is">info@lifsinsvatn.is</a><a href="index.html">lifsinsvatn.is</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p><span class="is-t">© 2026 Lífsins Vatn ehf. · Áfengislaus vín — 0,0%.</span><span class="en-t">© 2026 Lífsins Vatn ehf. · Dealcoholized wines — 0.0%.</span></p>
+    <span style="font-family:var(--serif);font-style:italic;font-size:1.05rem;color:rgba(255,255,255,.28)">Aqua Vitae</span>
+  </div>
+</footer>
+
+<script src="producer.js"></script>
+</body>
+</html>

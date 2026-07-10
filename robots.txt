@@ -1,0 +1,7 @@
+# robots.txt — Lífsins Vatn
+# Everything is open to search engines AND AI answer engines (we want AEO).
+User-agent: *
+Allow: /
+
+# Point crawlers to the sitemap
+Sitemap: https://lifsinsvatn.is/sitemap.xml

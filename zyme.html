@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zýmé — Merkileg vín frá Valpolicella | Lífsins Vatn</title>
+<meta name="description" content="Zýmé — eitt merkilegasta vínhús Valpolicella, með kjallara í 15. aldar sandsteinsnámu. Einkainnflutt til Íslands af Lífsins Vatn.">
+<link rel="canonical" href="https://lifsinsvatn.is/zyme.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Lífsins Vatn ehf">
+<meta name="theme-color" content="#141110">
+<link rel="icon" href="lifsinsvatn_logo_t.png">
+<link rel="apple-touch-icon" href="lifsinsvatn_logo_t.png">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lífsins Vatn">
+<meta property="og:locale" content="is_IS">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:url" content="https://lifsinsvatn.is/zyme.html">
+<meta property="og:title" content="Zýmé — Merkileg vín frá Valpolicella">
+<meta property="og:description" content="Eitt merkilegasta vínhús Valpolicella — kjallari höggvinn í 15. aldar sandsteinsnámu. Einkainnflutt til Íslands af Lífsins Vatn.">
+<meta property="og:image" content="https://lifsinsvatn.is/zyme_hero_cellar.jpg">
+<meta property="og:image:alt" content="Kjallari Zýmé í 15. aldar sandsteinsnámu, Valpolicella">
+
+<!-- Twitter / X card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Zýmé — Merkileg vín frá Valpolicella">
+<meta name="twitter:description" content="Kjallari höggvinn í 15. aldar sandsteinsnámu — merkileg vín, einkainnflutt af Lífsins Vatn.">
+<meta name="twitter:image" content="https://lifsinsvatn.is/zyme_hero_cellar.jpg">
+
+<!-- STRUCTURED DATA (JSON-LD) — Google rich results + AI answer engines. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://lifsinsvatn.is/#organization",
+      "name": "Lífsins Vatn ehf",
+      "url": "https://lifsinsvatn.is/",
+      "email": "info@lifsinsvatn.is",
+      "telephone": "+354 694 5257",
+      "logo": "https://lifsinsvatn.is/lifsinsvatn_logo_t.png",
+      "address": { "@type": "PostalAddress", "addressLocality": "Garðabær", "addressCountry": "IS" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://lifsinsvatn.is/zyme.html#webpage",
+      "url": "https://lifsinsvatn.is/zyme.html",
+      "name": "Zýmé — Merkileg vín frá Valpolicella",
+      "description": "Eitt merkilegasta vínhús Valpolicella, með kjallara í 15. aldar sandsteinsnámu. Einkainnflutt af Lífsins Vatn.",
+      "inLanguage": "is",
+      "about": { "@id": "https://lifsinsvatn.is/zyme.html#brand" }
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://lifsinsvatn.is/zyme.html#brand",
+      "name": "Zýmé",
+      "description": "Virt vínhús í Valpolicella á Ítalíu; kjallarinn er höggvinn í sandsteinsnámu frá 15. öld. Þekkt fyrir Amarone della Valpolicella og hinar eftirsóttu blöndur Harlequin (17 þrúgur) og Kairos (15 þrúgur).",
+      "url": "https://lifsinsvatn.is/zyme.html"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Lífsins Vatn", "item": "https://lifsinsvatn.is/" },
+        { "@type": "ListItem", "position": 2, "name": "Vínhús", "item": "https://lifsinsvatn.is/#producers" },
+        { "@type": "ListItem", "position": 3, "name": "Zýmé" }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="producer.css">
+<style>
+  /* Zýmé — the quarry cellar; darker and more minimal than the other estates */
+  .phero{min-height:88vh}
+  .phero-bg img{object-position:58% 50%;filter:saturate(.9) brightness(.94)}
+  .phero::after{background:
+    linear-gradient(180deg, rgba(12,9,7,.55) 0%, rgba(12,9,7,.18) 30%, rgba(12,9,7,.48) 60%, rgba(12,9,7,.94) 100%),
+    radial-gradient(120% 90% at 22% 96%, rgba(12,9,7,.6), rgba(12,9,7,0) 55%)}
+
+  /* the 15th-century quarry (with its carved stone face) beside the story text —
+     framed on the face, with a slow, gentle Ken Burns */
+  .story-media img{object-position:22% 42%;transform-origin:22% 42%;
+    animation:cellarKB 32s ease-in-out infinite alternate}
+  @keyframes cellarKB{from{transform:scale(1.01)}to{transform:scale(1.06)}}
+  @media(prefers-reduced-motion:reduce){.story-media img{animation:none;transform:none}}
+
+  /* ---- monochrome: neutralise the gilt accent everywhere on Zýmé ---- */
+  :root{--gold:#8E8577;--gold-lt:#D8D1C4}
+
+  /* ---- mostly-dark page; wines + awards stay light for reading details ---- */
+  .facts{background:var(--dark);border-bottom:1px solid rgba(255,255,255,.08)}
+  .facts .fact .k{color:rgba(233,226,214,.45)}
+  .facts .fact .v{color:#F0E9DB}
+  .sec-dark{background:var(--dark);color:#E9E2D6}
+  .sec-dark .eyebrow{color:rgba(233,226,214,.5)}
+  .sec-dark h2,.sec-dark .h2{color:#F3ECDE}
+  .sec-dark p,.sec-dark .muted,.sec-dark .story-body p{color:rgba(233,226,214,.72)}
+  .sec-dark .story-quote{color:#F1EADD;border-left-color:rgba(233,226,214,.28)}
+
+  /* ---- WINES as an editorial gallery: no boxes, floating bottles, ghosted numeral ---- */
+  .zwines{margin-top:8px}
+  .zwine{position:relative;display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(28px,5vw,84px);
+    align-items:center;padding:clamp(52px,6.5vw,104px) 0;border-top:1px solid var(--line)}
+  .zwine:first-child{border-top:0;padding-top:clamp(20px,3vw,40px)}
+  .zwine.flip .zwine-shot{order:2}
+  .zwine-shot{position:relative;display:flex;justify-content:center;align-items:center;min-height:360px}
+  .zwine-shot img{position:relative;z-index:1;max-height:clamp(300px,40vw,500px);width:auto;
+    filter:drop-shadow(0 44px 46px rgba(20,17,16,.20))}
+  .znum{position:absolute;z-index:0;top:50%;left:50%;transform:translate(-42%,-82%);
+    font-family:var(--serif);font-weight:400;font-size:clamp(20rem,52vw,48rem);line-height:.72;
+    color:var(--ink);opacity:.10;letter-spacing:-.03em;pointer-events:none;white-space:nowrap;user-select:none}
+  .zwine.flip .znum{transform:translate(-58%,-82%)}
+  .zwine-info{max-width:530px}
+  .zwine.flip .zwine-info{margin-left:auto}
+  .zwine-cat{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+  .zwine-name{font-family:var(--serif);font-weight:400;line-height:1.0;letter-spacing:.004em;
+    font-size:clamp(2.3rem,4.7vw,3.7rem);color:var(--ink);margin-bottom:14px}
+  .zwine-sub{font-family:var(--serif);font-style:italic;font-size:1.18rem;color:var(--muted);margin-bottom:24px}
+  .zwine-desc{color:var(--muted);font-weight:300;line-height:1.85;font-size:1.02rem;margin-bottom:28px}
+  .zwine-meta{display:flex;gap:26px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint)}
+  .zwine-meta span{position:relative}
+  .zwine-meta span+span::before{content:'';position:absolute;left:-14px;top:50%;width:4px;height:1px;background:var(--faint);opacity:.5}
+  @media(max-width:820px){
+    .zwine{grid-template-columns:1fr;gap:12px;text-align:center;padding:clamp(44px,9vw,64px) 0}
+    .zwine.flip .zwine-shot{order:0}
+    .zwine-info,.zwine.flip .zwine-info{max-width:none;margin:0 auto}
+    .zwine-meta{justify-content:center}
+    .zwine-shot{min-height:0}
+    .znum{font-size:68vw}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span><span class="is-t">Framleiðandi · Valpolicella, Ítalíu</span><span class="en-t">Producer · Valpolicella, Italy</span></span>
+    <span class="lang"><button id="btnIs" class="active" onclick="setLang('is')">IS</button><button id="btnEn" onclick="setLang('en')">EN</button></span>
+  </div>
+</div>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="nav-logo"><img src="lifsinsvatn_logo_t.png" alt="Lífsins Vatn ehf"><span class="nav-name">Lífsins Vatn</span></a>
+    <ul class="nav-links">
+      <li class="hide-sm"><a href="index.html#producers"><span class="is-t">Öll vínhús</span><span class="en-t">All estates</span></a></li>
+      <li class="hide-sm"><a href="borgo-molino.html">Borgo Molino</a></li>
+      <li class="hide-sm"><a href="vinuci.html">Vinuci</a></li>
+      <li><a href="index.html#contact" class="btn btn-dark" style="color:#fff"><span class="is-t">Hafa samband</span><span class="en-t">Get in touch</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="phero">
+  <div class="phero-bg"><img src="zyme_hero_cellar.jpg" alt="Zýmé's barrel cellar in a 15th-century sandstone quarry, Valpolicella"></div>
+  <div class="wrap phero-inner">
+    <a href="index.html#producers" class="phero-back">← <span class="is-t">Vínhúsin okkar</span><span class="en-t">Our estates</span></a>
+    <span class="phero-region">Valpolicella · Veneto</span>
+    <h1 class="h1">Zýmé</h1>
+    <p class="phero-lead"><span class="is-t">Eitt af merkilegustu vínhúsum Valpolicella — með kjallara höggvinn í sandsteinsnámu frá 15. öld.</span><span class="en-t">One of Valpolicella's most singular estates — its cellar carved into a 15th-century sandstone quarry.</span></p>
+  </div>
+</header>
+
+<div class="facts">
+  <div class="wrap">
+    <div class="fact"><div class="k"><span class="is-t">Hérað</span><span class="en-t">Region</span></div><div class="v">Valpolicella</div></div>
+    <div class="fact"><div class="k"><span class="is-t">Kjallari</span><span class="en-t">Cellar</span></div><div class="v"><span class="is-t">15. aldar náma</span><span class="en-t">15th-c. quarry</span></div></div>
+    <div class="fact"><div class="k"><span class="is-t">Heimspeki</span><span class="en-t">Philosophy</span></div><div class="v"><span class="is-t">Gegnsæi</span><span class="en-t">Transparency</span></div></div>
+  </div>
+</div>
+
+<!-- STORY -->
+<section class="section sec-dark">
+  <div class="wrap story">
+    <div class="story-media reveal"><img src="Zym%C3%A9/zyme_15decade_cellar.jpg" alt="A classical carved stone face set into Zýmé's 15th-century sandstone quarry cellar"></div>
+    <div class="story-body reveal">
+      <span class="eyebrow"><span class="is-t">Sagan</span><span class="en-t">The story</span></span>
+      <h2 class="h2"><span class="is-t">Handverk í sandsteinsnámu.</span><span class="en-t">Craft in a sandstone quarry.</span></h2>
+      <p><span class="is-t">Zýmé er meðal virtustu vínhúsa Valpolicella. Kjallarinn er höggvinn inn í sandsteinsnámu frá 15. öld, þar sem vín þroskast við náttúrulegan, stöðugan hita.</span><span class="en-t">Zýmé is among the most respected estates of Valpolicella. Its cellar is carved into a 15th-century sandstone quarry, where the wines mature at a natural, constant temperature.</span></p>
+      <div class="story-quote"><span class="is-t">„Að lesa megi sögu lands og handverks í hverjum sopa.“</span><span class="en-t">"To read the story of land and craft in every sip."</span></div>
+      <p><span class="is-t">Heimspeki hússins er gegnsæi — vínin eiga að endurspegla jarðveg, árferði og hendur þeirra sem gera þau, án tilgerðar.</span><span class="en-t">The house philosophy is transparency — the wines should reflect soil, vintage and the hands that make them, without artifice.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- WINES -->
+<section class="section" style="background:#fff">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="is-t">Vínin</span><span class="en-t">The wines</span></span>
+      <h2 class="h2"><span class="is-t">Úrval frá Zýmé.</span><span class="en-t">A selection from Zýmé.</span></h2>
+      <p class="muted"><span class="is-t">Frá klassísku Valpolicella til hinna eftirsóttu blandna — vínin sem við flytjum inn frá húsinu.</span><span class="en-t">From classic Valpolicella to its sought-after blends — the wines we import from the estate.</span></p>
+    </div>
+    <div class="zwines" data-stagger>
+
+      <article class="zwine reveal">
+        <div class="zwine-shot"><span class="znum" aria-hidden="true">17</span><img src="Zym%C3%A9/cat_harlequin.png" alt="Zýmé Harlequin 2011" loading="lazy"></div>
+        <div class="zwine-info">
+          <div class="zwine-cat"><span class="is-t">Merkisvín · Rautt · Blanda</span><span class="en-t">Icon · Red · Blend</span></div>
+          <h3 class="zwine-name">Harlequin</h3>
+          <div class="zwine-sub"><span class="is-t">2011 · samið úr sautján þrúgum</span><span class="en-t">2011 · composed from seventeen grapes</span></div>
+          <p class="zwine-desc"><span class="is-t">Skært rúbínrautt með granattónum. Þétt og margslungið, auðugt af blómum og rauðum ávexti, með viðar- (boisé) og steinefnatónum. Safaríkt og fyllt, mjúkt og vel samræmt, mjög auðugt og margslungið, með fínlegum tannínum.</span><span class="en-t">Bright ruby-red with garnet hues. Dense and complex, rich in flowers and red fruit, with woody (boisé) and mineral notes. Juicy and full-bodied, smooth and well-balanced, very rich and complex, with fine tannins.</span></p>
+          <div class="zwine-meta"><span>18–20°C</span><span>15%</span><span>750 ml</span></div>
+        </div>
+      </article>
+
+      <article class="zwine reveal flip">
+        <div class="zwine-shot"><span class="znum" aria-hidden="true">15</span><img src="Zym%C3%A9/cat_kairos.png" alt="Zýmé Kairos 2017" loading="lazy"></div>
+        <div class="zwine-info">
+          <div class="zwine-cat"><span class="is-t">Rautt · Blanda</span><span class="en-t">Red · Blend</span></div>
+          <h3 class="zwine-name">Kairos</h3>
+          <div class="zwine-sub"><span class="is-t">2017 · samið úr fimmtán þrúgum</span><span class="en-t">2017 · composed from fifteen grapes</span></div>
+          <p class="zwine-desc"><span class="is-t">Ljómandi, þétt rúbínrautt sem hnígur til granats með aldri; auðugt af glýseríni. Mósaík af ávexti, blómum og jarðbundnum steinefnum — umlykjandi auðlegð og margbreytileiki. Ávaxtamarmelaði og skógarbotn víkja fyrir píputóbaki, kanil, múskati og negul, yfir steinefnaæð, og lýkur með mikilli lengd og aðlaðandi sætutón.</span><span class="en-t">Luminous, dense ruby-red, tending to garnet with age; glycerine-rich. A mosaic of fruit, blossoms and earthy minerality alternating with one another. Fruit marmalade and forest floor give way to pipe tobacco, cinnamon, nutmeg and clove, over a vein of minerality, concluding with great length and an appealing note of sweetness.</span></p>
+          <div class="zwine-meta"><span>16–18°C</span><span>15%</span><span>750 ml</span></div>
+        </div>
+      </article>
+
+      <article class="zwine reveal">
+        <div class="zwine-shot"><span class="znum" aria-hidden="true">5</span><img src="Zym%C3%A9/cat_amarone.png" alt="Zýmé Amarone della Valpolicella Classico 2015" loading="lazy"></div>
+        <div class="zwine-info">
+          <div class="zwine-cat"><span class="is-t">Rautt · Amarone</span><span class="en-t">Red · Amarone</span></div>
+          <h3 class="zwine-name">Amarone Classico</h3>
+          <div class="zwine-sub"><span class="is-t">Appassimento · 2015 · fimm þrúgur</span><span class="en-t">Appassimento · 2015 · five grapes</span></div>
+          <p class="zwine-desc"><span class="is-t">Ákaft rúbínrautt, auðugt af glýseríni, sem hnígur til granats með aldri. Tónar af þroskuðu kirsuberi og morell-kirsuberi, hálfþurrkaðri plómu og kryddi. Byrjar með aðlaðandi safaríki sem endurspeglar ilminn og bætir við ávaxtasultu; með þroskun lengist bragðið og býður fínlega tóna af pipar, svörtum lakkrís og kakódufti.</span><span class="en-t">Intense ruby-red, glycerine-rich, tending to garnet with age. Notes of ripe cherry and morello cherry, semi-dried plum and spices. Enters with an appealing savouriness that mirrors the nose and adds fruit preserves; with ageing the palate lengthens, offering delicate impressions of pepper, black liquorice and cocoa powder.</span></p>
+          <div class="zwine-meta"><span>18–20°C</span><span>15,5%</span><span>750 ml</span></div>
+        </div>
+      </article>
+
+      <article class="zwine reveal flip">
+        <div class="zwine-shot"><span class="znum" aria-hidden="true">4</span><img src="Zym%C3%A9/cat_valpolicella.png" alt="Zýmé Valpolicella Classico Superiore 2017" loading="lazy"></div>
+        <div class="zwine-info">
+          <div class="zwine-cat"><span class="is-t">Rautt</span><span class="en-t">Red</span></div>
+          <h3 class="zwine-name">Valpolicella Classico Superiore</h3>
+          <div class="zwine-sub"><span class="is-t">2017 · fjórar þrúgur</span><span class="en-t">2017 · four grapes</span></div>
+          <p class="zwine-desc"><span class="is-t">Ákaft rúbínrautt, auðugt af glýseríni. Tónar af þroskuðu kirsuberi, morell-kirsuberi og hálfþurrkaðri plómu. Mjúkt og seiðandi, með aðlaðandi safaríki og keim af þroskuðum ávexti og kryddi.</span><span class="en-t">Intense ruby-red, glycerine-rich. Notes of ripe cherry, morello cherry and semi-dried plum. Smooth and seductive, with an appealing sapidity and impressions of ripe fruit and spice.</span></p>
+          <div class="zwine-meta"><span>16–18°C</span><span>13,5%</span><span>750 ml</span></div>
+        </div>
+      </article>
+
+      <article class="zwine reveal">
+        <div class="zwine-shot"><img src="Zym%C3%A9/cat_ilbianco.png" alt="Zýmé From Black to White Il Bianco 2018" loading="lazy"></div>
+        <div class="zwine-info">
+          <div class="zwine-cat"><span class="is-t">Hvítt · Blanda</span><span class="en-t">White · Blend</span></div>
+          <h3 class="zwine-name">From Black to White</h3>
+          <div class="zwine-sub"><span class="is-t">Il Bianco · 2018</span><span class="en-t">Il Bianco · 2018</span></div>
+          <p class="zwine-desc"><span class="is-t">Ljómandi, með grænleitum og fölgulum blæ; áhrifamikil, glýserólrík fylling. Fínlegir tónar af vorvilliblómum, ávexti og sveitajurtum — akasíu, maríulykli, Golden Delicious epli, bleiku greipaldini, myntu, vanillu og ylli. Fínlegt og elegant, með fullkomlega samræmdum ilmi; á tungu seiðandi, auðugt, margslungið, ferskt, steinefnaríkt og mjög langt.</span><span class="en-t">Luminous, with greenish and pale-yellow highlights; impressive, glycerol-derived viscosity. Delicate notes of spring wildflowers, fruit and country herbs — acacia, primrose, Golden Delicious apple, pink grapefruit, mint, vanilla, elderflower. Delicate and elegant, with perfectly balanced aromatics; on the palate seductive, rich, complex, tangy, mineral and very long.</span></p>
+          <div class="zwine-meta"><span>10–12°C</span><span>13%</span><span>750 ml</span></div>
+        </div>
+      </article>
+
+    </div>
+    <p class="muted reveal" style="margin-top:40px;font-size:.9rem"><span class="is-t">Sum vín eru í takmörkuðu upplagi — <a href="index.html#contact" style="border-bottom:1px solid var(--gold)">hafðu samband fyrir framboð</a>.</span><span class="en-t">Some wines are in limited supply — <a href="index.html#contact" style="border-bottom:1px solid var(--gold)">contact us for availability</a>.</span></p>
+  </div>
+</section>
+
+<!-- GALLERY (pending) -->
+<section class="section sec-dark">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="is-t">Myndir</span><span class="en-t">Gallery</span></span>
+      <h2 class="h2"><span class="is-t">Frá Valpolicella.</span><span class="en-t">From Valpolicella.</span></h2>
+    </div>
+    <div class="gallery three reveal">
+      <figure><img src="Zym%C3%A9/Zyme-vineyard.jpg" alt="Zýmé vineyards in Valpolicella"></figure>
+      <figure><img src="Zym%C3%A9/zyme_15decade_cellar.jpg" alt="The 15th-century sandstone cellar with ageing barrels"></figure>
+      <figure><img src="Zym%C3%A9/Zyme-1.jpg" alt="The Zýmé winery building"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS (pending) -->
+<section class="section" style="background:#fff">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="is-t">Viðurkenningar</span><span class="en-t">Awards &amp; recognition</span></span>
+      <h2 class="h2"><span class="is-t">Verðlaun og umfjöllun.</span><span class="en-t">Awards and coverage.</span></h2>
+    </div>
+    <div class="reveal placeholder" style="max-width:760px">
+      <strong><span class="is-t">Efni vantar</span><span class="en-t">Content pending</span></strong><br>
+      <span class="is-t">Zýmé hefur hlotið mikla umfjöllun og einkunnir í alþjóðlegum vínmiðlum. Sendu mér þær sem þið viljið sýna (með ártali) og ég set þær upp.</span><span class="en-t">Zýmé has received significant coverage and scores in international wine media. Send me the ones you'd like to feature (with the year) and I'll lay them out.</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta">
+  <div class="wrap">
+    <span class="eyebrow"><span class="is-t">Áhugasöm?</span><span class="en-t">Interested?</span></span>
+    <h2 class="h2"><span class="is-t">Fáðu Zýmé á þinn stað.</span><span class="en-t">Bring Zýmé to your venue.</span></h2>
+    <p><span class="is-t">Við komum til þín, smökkum saman og finnum réttu vínin fyrir staðinn eða viðburðinn.</span><span class="en-t">We come to you, taste together, and find the right wines for your venue or event.</span></p>
+    <div class="cta-btns">
+      <a href="index.html#contact" class="btn btn-wine"><span class="is-t">Bóka smökkun</span><span class="en-t">Book a tasting</span></a>
+      <a href="https://www.zyme.it" target="_blank" rel="noopener" class="btn btn-light">zyme.it ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <div class="f-brand">Lífsins Vatn</div>
+      <p class="f-desc"><span class="is-t">Ítölsk gæðavín, einkainnflutt á Íslandi. Fjölskyldurekið.</span><span class="en-t">Italian fine wines, exclusively imported to Iceland. Family owned.</span></p>
+    </div>
+    <div class="f-col">
+      <h4><span class="is-t">Vínhús</span><span class="en-t">Estates</span></h4>
+      <a href="borgo-molino.html">Borgo Molino</a><a href="zyme.html">Zýmé</a><a href="vinuci.html">Vinuci 0%</a>
+    </div>
+    <div class="f-col">
+      <h4><span class="is-t">Samband</span><span class="en-t">Contact</span></h4>
+      <a href="mailto:info@lifsinsvatn.is">info@lifsinsvatn.is</a><a href="index.html">lifsinsvatn.is</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p><span class="is-t">© 2026 Lífsins Vatn ehf. · Selur aðeins áfenga drykki til þeirra sem hafa tilskilin leyfi skv. lögum nr. 75/1998.</span><span class="en-t">© 2026 Lífsins Vatn ehf. · Sells alcoholic beverages only to those with the required licence under Act No. 75/1998.</span></p>
+    <span style="font-family:var(--serif);font-style:italic;font-size:1.05rem;color:rgba(255,255,255,.28)">Aqua Vitae</span>
+  </div>
+</footer>
+
+<script src="producer.js"></script>
+</body>
+</html>
