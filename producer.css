@@ -168,8 +168,14 @@ body.en .is-t{display:none}body.en .en-t{display:inline}
   .wines-grid .wine-card{flex-basis:100%;max-width:420px}
   .gallery{grid-template-columns:1fr 1fr}
   .footer .wrap{grid-template-columns:1fr 1fr}
-  .nav-links{gap:16px}.nav-links .hide-sm{display:none}.nav-name{font-size:19px}.nav-logo img{height:50px}
+  .nav-links{gap:16px}.nav-links .hide-sm{display:none}.nav-name{font-size:18px}.nav-logo img{height:46px}
+  .nav .wrap{gap:12px;padding:0 16px;height:72px}
+  .nav-logo{gap:10px}
+  .nav-links .btn{padding:11px 15px;font-size:10px;letter-spacing:.08em;white-space:nowrap}
   .facts .wrap{gap:32px}
+}
+@media(max-width:360px){
+  .nav-name{display:none}
 }
 @media(prefers-reduced-motion:reduce){
   .reveal{opacity:1;transform:none;transition:none}
