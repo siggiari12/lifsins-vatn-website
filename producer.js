@@ -21,5 +21,5 @@ document.querySelectorAll('[data-stagger]').forEach(function(group){
 // scroll reveal
 var obs=new IntersectionObserver(function(entries){
   entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); } });
-},{threshold:0.12, rootMargin:'0px 0px -6% 0px'});
+},{threshold:0, rootMargin:'0px 0px -6% 0px'});
 document.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
