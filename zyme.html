@@ -103,6 +103,17 @@
   .sec-dark p,.sec-dark .muted,.sec-dark .story-body p{color:rgba(233,226,214,.72)}
   .sec-dark .story-quote{color:#F1EADD;border-left-color:rgba(233,226,214,.28)}
 
+  /* ---- soften the hard dark<->light section transitions with a gradient fade ---- */
+  .section{position:relative}
+  .sec-dark:has(+ .section:not(.sec-dark):not(.cta))::after,
+  .section:not(.sec-dark):not(.cta):has(+ .sec-dark)::after,
+  .section:not(.sec-dark):not(.cta):has(+ .cta)::after{
+    content:'';position:absolute;left:0;right:0;bottom:0;
+    height:clamp(70px,11vw,140px);pointer-events:none;z-index:1}
+  .sec-dark:has(+ .section:not(.sec-dark):not(.cta))::after{background:linear-gradient(rgba(20,17,16,0),#fff)}
+  .section:not(.sec-dark):not(.cta):has(+ .sec-dark)::after,
+  .section:not(.sec-dark):not(.cta):has(+ .cta)::after{background:linear-gradient(rgba(255,255,255,0),#141110)}
+
   /* ---- WINES as an editorial gallery: no boxes, floating bottles, ghosted numeral ---- */
   .zwines{margin-top:8px}
   .zwine{position:relative;display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(28px,5vw,84px);
