@@ -103,16 +103,14 @@
   .sec-dark p,.sec-dark .muted,.sec-dark .story-body p{color:rgba(233,226,214,.72)}
   .sec-dark .story-quote{color:#F1EADD;border-left-color:rgba(233,226,214,.28)}
 
-  /* ---- soften the hard dark<->light section transitions with a gradient fade ---- */
-  .section{position:relative}
-  .sec-dark:has(+ .section:not(.sec-dark):not(.cta))::after,
-  .section:not(.sec-dark):not(.cta):has(+ .sec-dark)::after,
-  .section:not(.sec-dark):not(.cta):has(+ .cta)::after{
-    content:'';position:absolute;left:0;right:0;bottom:0;
-    height:clamp(70px,11vw,140px);pointer-events:none;z-index:1}
-  .sec-dark:has(+ .section:not(.sec-dark):not(.cta))::after{background:linear-gradient(rgba(20,17,16,0),#fff)}
-  .section:not(.sec-dark):not(.cta):has(+ .sec-dark)::after,
-  .section:not(.sec-dark):not(.cta):has(+ .cta)::after{background:linear-gradient(rgba(255,255,255,0),#141110)}
+  /* ---- stacked panels: each section rises over the previous with a soft rounded edge ---- */
+  .section{position:relative;z-index:1;border-radius:34px 34px 0 0;
+    box-shadow:0 -26px 50px -32px rgba(20,17,16,.5)}
+  .section+.section,
+  .phero+.section{margin-top:clamp(-46px,-4vw,-34px)}
+  .sec-dark,.cta{box-shadow:0 -26px 55px -30px rgba(0,0,0,.6)}
+  /* the wines/awards light panels get a warmer lift shadow */
+  .section:not(.sec-dark):not(.cta){box-shadow:0 -22px 46px -30px rgba(20,17,16,.28)}
 
   /* ---- WINES as an editorial gallery: no boxes, floating bottles, ghosted numeral ---- */
   .zwines{margin-top:8px}
