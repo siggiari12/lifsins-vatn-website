@@ -103,14 +103,14 @@
   .sec-dark p,.sec-dark .muted,.sec-dark .story-body p{color:rgba(233,226,214,.72)}
   .sec-dark .story-quote{color:#F1EADD;border-left-color:rgba(233,226,214,.28)}
 
-  /* ---- stacked panels: each section rises over the previous with a soft rounded edge ---- */
-  .section{position:relative;z-index:1;border-radius:34px 34px 0 0;
-    box-shadow:0 -26px 50px -32px rgba(20,17,16,.5)}
-  .section+.section,
-  .phero+.section{margin-top:clamp(-46px,-4vw,-34px)}
-  .sec-dark,.cta{box-shadow:0 -26px 55px -30px rgba(0,0,0,.6)}
-  /* the wines/awards light panels get a warmer lift shadow */
-  .section:not(.sec-dark):not(.cta){box-shadow:0 -22px 46px -30px rgba(20,17,16,.28)}
+  /* ---- warm ivory light sections: gentle contrast against the warm near-black ---- */
+  .section.light{background:#F1EBDF !important;color:#2A241C}
+  .section.light .eyebrow{color:#9A8F7C}
+  .section.light h2,.section.light .h2,.section.light .zwine-name,.section.light .zwine-cat{color:#241E17}
+  .section.light .muted,.section.light p,.section.light .zwine-desc,.section.light .zwine-sub{color:#5C5344}
+  .section.light .zwine-meta span,.section.light .zwine-meta{color:#8A7F6D}
+  .section.light .znum{color:#241E17;opacity:.06}
+  .section.light .zsel::before,.section.light hr,.section.light .rule{border-color:#DFD6C6}
 
   /* ---- WINES as an editorial gallery: no boxes, floating bottles, ghosted numeral ---- */
   .zwines{margin-top:8px}
@@ -199,7 +199,7 @@
 </section>
 
 <!-- WINES -->
-<section class="section" style="background:#fff">
+<section class="section light" style="background:#fff">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow"><span class="is-t">Vínin</span><span class="en-t">The wines</span></span>
@@ -284,7 +284,7 @@
 </section>
 
 <!-- AWARDS (pending) -->
-<section class="section" style="background:#fff">
+<section class="section light" style="background:#fff">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow"><span class="is-t">Viðurkenningar</span><span class="en-t">Awards &amp; recognition</span></span>
