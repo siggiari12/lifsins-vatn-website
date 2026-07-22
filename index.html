@@ -77,6 +77,22 @@
         { "@type": "ListItem", "position": 2, "name": "Vinuci", "url": "https://lifsinsvatn.is/vinuci.html" },
         { "@type": "ListItem", "position": 3, "name": "Zýmé", "url": "https://lifsinsvatn.is/zyme.html" }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lifsinsvatn.is/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Hvað er Lífsins Vatn?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Fjölskyldufyrirtæki í Garðabæ sem flytur inn ítölsk gæðavín til Íslands — freyðivín, kyrrvín og áfengislaus vín frá völdum ítölskum fjölskylduvínhúsum." } },
+        { "@type": "Question", "name": "Hvaða vín flytur Lífsins Vatn inn?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Vín frá þremur ítölskum framleiðendum: freyðivín frá Borgo Molino (Valdobbiadene Prosecco), merkileg vín frá Zýmé í Valpolicella, og áfengislaus vín frá Vinuci." } },
+        { "@type": "Question", "name": "Selur Lífsins Vatn áfengislaus vín?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Já. Vinuci er ítalskt áfengislaust léttvín (0,0%) — 100% bragð en 0% áfengi — og er í sérstökum forgangi hjá okkur." } },
+        { "@type": "Question", "name": "Hvar fást vínin?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Lífsins Vatn útvegar veitingastöðum, hótelum, sérverslunum og einstaklingum með tilskilin leyfi. Hafðu samband í info@lifsinsvatn.is eða síma +354 694 5257." } },
+        { "@type": "Question", "name": "Hvernig bóka ég smökkun?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Hafðu samband í info@lifsinsvatn.is eða síma +354 694 5257. Við komum til þín, kynnum úrvalið og finnum það sem hentar — án skuldbindinga." } }
+      ]
     }
   ]
 }
@@ -281,6 +297,14 @@ h1,h2,h3,.h1,.h2{font-family:var(--serif)}
 .footer-bottom{display:flex;justify-content:space-between;gap:24px;padding-top:24px;align-items:center}
 .footer-bottom p{font-size:11px;color:rgba(255,255,255,.32);font-weight:300;line-height:1.6;max-width:620px}
 
+.faq-list{max-width:840px;margin:6px auto 0}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item summary{cursor:pointer;list-style:none;padding:24px 44px 24px 0;position:relative;font-family:var(--serif);font-size:1.4rem;font-weight:500;color:var(--ink)}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'+';position:absolute;right:4px;top:50%;transform:translateY(-50%);font-family:var(--sans);font-size:1.35rem;color:var(--gold)}
+.faq-item[open] summary::after{content:'\2013'}
+.faq-item .faq-a{padding:0 44px 26px 0;color:var(--muted);font-weight:300;line-height:1.72;max-width:72ch}
+.faq-item .faq-a a{color:var(--wine);text-decoration:underline}
 .en-t{display:none}.is-t{display:inline}
 body.en .is-t{display:none}body.en .en-t{display:inline}
 
@@ -393,6 +417,37 @@ body.en .is-t{display:none}body.en .en-t{display:inline}
           <span class="ec-view"><span class="is-t">Skoða vínhúsið</span><span class="en-t">View the estate</span></span>
         </div>
       </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="is-t">Algengar spurningar</span><span class="en-t">FAQ</span></span>
+      <h2 class="h2"><span class="is-t">Spurt og svarað.</span><span class="en-t">Questions &amp; answers.</span></h2>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item" open>
+        <summary><span class="is-t">Hvað er Lífsins Vatn?</span><span class="en-t">What is Lífsins Vatn?</span></summary>
+        <div class="faq-a"><span class="is-t">Fjölskyldufyrirtæki í Garðabæ sem flytur inn ítölsk gæðavín til Íslands — freyðivín, kyrrvín og áfengislaus vín frá völdum ítölskum fjölskylduvínhúsum.</span><span class="en-t">A family company in Garðabær importing fine Italian wines to Iceland — sparkling, still and alcohol-free wines from hand-picked Italian family estates.</span></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="is-t">Hvaða vín flytur Lífsins Vatn inn?</span><span class="en-t">Which wines does Lífsins Vatn import?</span></summary>
+        <div class="faq-a"><span class="is-t">Vín frá þremur ítölskum framleiðendum: freyðivín frá Borgo Molino (Valdobbiadene Prosecco), merkileg vín frá Zýmé í Valpolicella, og áfengislaus vín frá Vinuci.</span><span class="en-t">Wines from three Italian producers: sparkling wine from Borgo Molino (Valdobbiadene Prosecco), remarkable wines from Zýmé in Valpolicella, and alcohol-free wines from Vinuci.</span></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="is-t">Selur Lífsins Vatn áfengislaus vín?</span><span class="en-t">Does Lífsins Vatn sell alcohol-free wine?</span></summary>
+        <div class="faq-a"><span class="is-t">Já. Vinuci er ítalskt áfengislaust léttvín (0,0%) — 100% bragð en 0% áfengi — og er í sérstökum forgangi hjá okkur.</span><span class="en-t">Yes. Vinuci is Italian alcohol-free wine (0.0%) — 100% flavour, 0% alcohol — and a particular focus for us.</span></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="is-t">Hvar fást vínin?</span><span class="en-t">Where can I get the wines?</span></summary>
+        <div class="faq-a"><span class="is-t">Lífsins Vatn útvegar veitingastöðum, hótelum, sérverslunum og einstaklingum með tilskilin leyfi. Hafðu samband í <a href="#contact">info@lifsinsvatn.is</a> eða síma +354 694 5257.</span><span class="en-t">Lífsins Vatn supplies restaurants, hotels, specialty shops and licensed buyers. Get in touch at <a href="#contact">info@lifsinsvatn.is</a> or call +354 694 5257.</span></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="is-t">Hvernig bóka ég smökkun?</span><span class="en-t">How do I book a tasting?</span></summary>
+        <div class="faq-a"><span class="is-t">Hafðu samband í <a href="#contact">info@lifsinsvatn.is</a> eða síma +354 694 5257. Við komum til þín, kynnum úrvalið og finnum það sem hentar — án skuldbindinga.</span><span class="en-t">Get in touch at <a href="#contact">info@lifsinsvatn.is</a> or call +354 694 5257. We come to you, present the range and find what fits — no obligation.</span></div>
+      </details>
     </div>
   </div>
 </section>
