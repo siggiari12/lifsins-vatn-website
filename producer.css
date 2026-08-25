@@ -39,13 +39,13 @@ h1,h2,h3,.h1,.h2{font-family:var(--serif)}
 /* topbar + nav */
 .topbar{border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.12em;color:var(--faint)}
 .topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:38px}
-.lang button{background:none;border:none;font:inherit;color:var(--faint);cursor:pointer;padding:2px 8px;letter-spacing:.12em}
+.lang button{background:none;border:none;font-size:11px;color:var(--faint);cursor:pointer;padding:2px 5px;letter-spacing:.12em}
 .lang button.active{color:var(--ink)}
 .nav{position:sticky;top:0;z-index:100;background:rgba(251,250,248,.86);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
 .nav.scrolled{border-bottom-color:var(--line);box-shadow:0 8px 30px rgba(20,16,12,.05)}
 .nav .wrap{display:flex;align-items:center;height:88px;gap:36px;transition:height .3s}
 .nav.scrolled .wrap{height:74px}
-.nav-logo{display:flex;align-items:center;gap:13px}.nav-logo img{height:58px;width:auto;transition:height .3s}.nav.scrolled .nav-logo img{height:50px}
+.nav-logo{display:flex;align-items:center;gap:13px}.nav-logo img{height:66px;width:auto;transition:height .3s}.nav.scrolled .nav-logo img{height:56px}
 .nav-name{font-family:var(--serif);font-size:24px;letter-spacing:.01em;font-weight:500;color:var(--ink);white-space:nowrap}
 .nav-links{display:flex;gap:28px;margin-left:auto;list-style:none;align-items:center}
 .nav-links a{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);position:relative;transition:.2s}
@@ -168,7 +168,7 @@ body.en .is-t{display:none}body.en .en-t{display:inline}
   .wines-grid .wine-card{flex-basis:100%;max-width:420px}
   .gallery{grid-template-columns:1fr 1fr}
   .footer .wrap{grid-template-columns:1fr 1fr}
-  .nav-links{gap:16px}.nav-links .hide-sm{display:none}.nav-name{font-size:18px}.nav-logo img{height:46px}
+  .nav-links{gap:14px}.nav-links .hide-sm{display:none}.nav-name{font-size:18px}.nav-logo img{height:52px}
   .nav .wrap{gap:12px;padding:0 16px;height:72px}
   .nav-logo{gap:10px}
   .nav-links .btn{padding:11px 15px;font-size:10px;letter-spacing:.08em;white-space:nowrap}

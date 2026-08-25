@@ -94,10 +94,10 @@
 <style>
   /* Zýmé — the quarry cellar; darker and more minimal than the other estates */
   .phero{min-height:88vh}
-  .phero-bg img{object-position:58% 50%;filter:saturate(.9) brightness(.94)}
+  .phero-bg img{object-position:58% 50%;filter:saturate(.98) brightness(1.14) contrast(1.02)}
   .phero::after{background:
-    linear-gradient(180deg, rgba(12,9,7,.55) 0%, rgba(12,9,7,.18) 30%, rgba(12,9,7,.48) 60%, rgba(12,9,7,.94) 100%),
-    radial-gradient(120% 90% at 22% 96%, rgba(12,9,7,.6), rgba(12,9,7,0) 55%)}
+    linear-gradient(180deg, rgba(12,9,7,.26) 0%, rgba(12,9,7,.05) 34%, rgba(12,9,7,.28) 64%, rgba(12,9,7,.76) 100%),
+    radial-gradient(120% 90% at 22% 96%, rgba(12,9,7,.42), rgba(12,9,7,0) 55%)}
 
   /* the 15th-century quarry (with its carved stone face) beside the story text —
      framed on the face, with a slow, gentle Ken Burns */
@@ -163,21 +163,15 @@
 </head>
 <body>
 
-<div class="topbar">
-  <div class="wrap">
-    <span><span class="is-t">Framleiðandi · Valpolicella, Ítalíu</span><span class="en-t">Producer · Valpolicella, Italy</span></span>
-    <span class="lang"><button id="btnIs" class="active" onclick="setLang('is')">IS</button><button id="btnEn" onclick="setLang('en')">EN</button></span>
-  </div>
-</div>
-
 <nav class="nav">
   <div class="wrap">
-    <a href="index.html" class="nav-logo"><img src="lifsinsvatn_logo_t.png" alt="Lífsins Vatn ehf"><span class="nav-name">Lífsins Vatn</span></a>
+    <a href="index.html" class="nav-logo"><img src="lifsinsvatn_logo_nav.png" alt="Lífsins Vatn ehf"></a>
     <ul class="nav-links">
       <li class="hide-sm"><a href="index.html#producers"><span class="is-t">Öll vínhús</span><span class="en-t">All estates</span></a></li>
       <li class="hide-sm"><a href="borgo-molino.html">Borgo Molino</a></li>
       <li class="hide-sm"><a href="vinuci.html">Vinuci</a></li>
       <li><a href="index.html#contact" class="btn btn-dark" style="color:#fff"><span class="is-t">Hafa samband</span><span class="en-t">Get in touch</span></a></li>
+      <li class="lang-li"><span class="lang"><button id="btnIs" class="active" onclick="setLang('is')">IS</button><button id="btnEn" onclick="setLang('en')">EN</button></span></li>
     </ul>
   </div>
 </nav>
@@ -288,20 +282,6 @@
   </div>
 </section>
 
-<!-- AWARDS (pending) -->
-<section class="section light" style="background:#fff">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="eyebrow"><span class="is-t">Viðurkenningar</span><span class="en-t">Awards &amp; recognition</span></span>
-      <h2 class="h2"><span class="is-t">Verðlaun og umfjöllun.</span><span class="en-t">Awards and coverage.</span></h2>
-    </div>
-    <div class="reveal placeholder" style="max-width:760px">
-      <strong><span class="is-t">Efni vantar</span><span class="en-t">Content pending</span></strong><br>
-      <span class="is-t">Zýmé hefur hlotið mikla umfjöllun og einkunnir í alþjóðlegum vínmiðlum. Sendu mér þær sem þið viljið sýna (með ártali) og ég set þær upp.</span><span class="en-t">Zýmé has received significant coverage and scores in international wine media. Send me the ones you'd like to feature (with the year) and I'll lay them out.</span>
-    </div>
-  </div>
-</section>
-
 <!-- FAQ (AEO) — visible copy mirrored in FAQPage JSON-LD in the <head> -->
 <section class="section light" id="faq">
   <div class="wrap">
@@ -341,7 +321,7 @@
     <h2 class="h2"><span class="is-t">Fáðu Zýmé á þinn stað.</span><span class="en-t">Bring Zýmé to your venue.</span></h2>
     <p><span class="is-t">Við komum til þín, smökkum saman og finnum réttu vínin fyrir staðinn eða viðburðinn.</span><span class="en-t">We come to you, taste together, and find the right wines for your venue or event.</span></p>
     <div class="cta-btns">
-      <a href="index.html#contact" class="btn btn-wine"><span class="is-t">Bóka smökkun</span><span class="en-t">Book a tasting</span></a>
+      <a href="index.html#contact" class="btn btn-wine"><span class="is-t">Bókaðu smökkun</span><span class="en-t">Book a tasting</span></a>
       <a href="https://www.zyme.it" target="_blank" rel="noopener" class="btn btn-light">zyme.it ↗</a>
     </div>
   </div>

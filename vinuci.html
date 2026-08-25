@@ -100,9 +100,16 @@
   .range-head .lead{color:var(--muted);font-weight:300}
   @media(max-width:620px){.range-head{flex-direction:column;text-align:center}.range-head .rh-text{text-align:center}}
   .lineup{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(10px,1.8vw,28px);align-items:start}
-  .vwine .shot-wrap{height:clamp(200px,25vw,312px);display:flex;align-items:flex-end;justify-content:center}
+  .vwine .shot-wrap{position:relative;height:clamp(200px,25vw,312px);display:flex;align-items:flex-end;justify-content:center}
+  /* soft elliptical contact shadow pooled under the base — grounds the bottle */
+  .vwine .shot-wrap::after{content:'';position:absolute;left:50%;bottom:11px;transform:translateX(-50%);
+    width:clamp(64px,43%,116px);height:16px;border-radius:50%;
+    background:radial-gradient(ellipse at center,rgba(30,35,48,.40) 0%,rgba(30,35,48,.17) 46%,rgba(30,35,48,0) 72%);
+    filter:blur(4px);z-index:0;pointer-events:none;
+    transition:transform .5s cubic-bezier(.2,.6,.2,1),opacity .5s}
+  .vwine:hover .shot-wrap::after{transform:translateX(-50%) scaleX(1.16);opacity:.66}
   .vwine{display:flex;flex-direction:column;align-items:center;text-align:center}
-  .vwine .shot{max-height:100%;width:auto;filter:drop-shadow(0 22px 24px rgba(30,35,48,.26));transition:transform .5s cubic-bezier(.2,.6,.2,1)}
+  .vwine .shot{position:relative;z-index:1;max-height:100%;width:auto;filter:drop-shadow(0 7px 9px rgba(30,35,48,.16));transition:transform .5s cubic-bezier(.2,.6,.2,1)}
   .vwine:hover .shot{transform:translateY(-12px)}
   .vwine h3{font-family:var(--serif);font-style:italic;font-weight:500;font-size:1.7rem;color:var(--vin-slate);margin-top:20px;line-height:1}
   .vwine .vtype{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--vin-terra);font-weight:600;margin-top:10px}
@@ -278,21 +285,15 @@
 </head>
 <body>
 
-<div class="topbar">
-  <div class="wrap">
-    <span><span class="is-t">Framleiðandi · Áfengislaust · Ítalíu</span><span class="en-t">Producer · Dealcoholized · Italy</span></span>
-    <span class="lang"><button id="btnIs" class="active" onclick="setLang('is')">IS</button><button id="btnEn" onclick="setLang('en')">EN</button></span>
-  </div>
-</div>
-
 <nav class="nav">
   <div class="wrap">
-    <a href="index.html" class="nav-logo"><img src="lifsinsvatn_logo_t.png" alt="Lífsins Vatn ehf"><span class="nav-name">Lífsins Vatn</span></a>
+    <a href="index.html" class="nav-logo"><img src="lifsinsvatn_logo_nav.png" alt="Lífsins Vatn ehf"></a>
     <ul class="nav-links">
       <li class="hide-sm"><a href="index.html#producers"><span class="is-t">Öll vínhús</span><span class="en-t">All estates</span></a></li>
       <li class="hide-sm"><a href="borgo-molino.html">Borgo Molino</a></li>
       <li class="hide-sm"><a href="zyme.html">Zýmé</a></li>
       <li><a href="index.html#contact" class="btn btn-dark" style="color:#fff"><span class="is-t">Hafa samband</span><span class="en-t">Get in touch</span></a></li>
+      <li class="lang-li"><span class="lang"><button id="btnIs" class="active" onclick="setLang('is')">IS</button><button id="btnEn" onclick="setLang('en')">EN</button></span></li>
     </ul>
   </div>
 </nav>
@@ -476,7 +477,7 @@
     <h2 class="h2"><span class="is-t">Prófaðu Vinuci á þínum stað.</span><span class="en-t">Try Vinuci at your venue.</span></h2>
     <p><span class="is-t">Við komum með úrvalið, smökkum saman og finnum vínin sem passa á matseðilinn þinn.</span><span class="en-t">We bring the range, taste together, and find the wines that fit your menu.</span></p>
     <div class="cta-btns">
-      <a href="index.html#contact" class="btn btn-wine"><span class="is-t">Bóka smökkun</span><span class="en-t">Book a tasting</span></a>
+      <a href="index.html#contact" class="btn btn-wine"><span class="is-t">Bókaðu smökkun</span><span class="en-t">Book a tasting</span></a>
       <a href="https://www.vinuci.it" target="_blank" rel="noopener" class="btn btn-light">vinuci.it ↗</a>
     </div>
   </div>
